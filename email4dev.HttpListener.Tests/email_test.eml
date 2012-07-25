@@ -1,0 +1,14 @@
+X-Sender: donotreply@domain.com"
+ <donotreply@domain.com>
+X-Receiver: receiver@domain.com
+MIME-Version: 1.0
+From: "confirmation@domain.com"
+ <donotreply@domain.com>
+To: email@domain.com
+Date: 19 Jul 2012 14:55:47 +0100
+Subject: Hello world
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+=0D=0A             =0D=0A<html>=</ht=
+ml>=0D=0A
