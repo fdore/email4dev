@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>email4dev.HttpHandler</id>
-    <version>0.2.2</version>
+    <version>0.1.0</version>
     <title>email4dev Http Handler</title>
     <authors>Fabrice Dore</authors>            
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,7 +11,8 @@
     <tags>email http handle</tags>  
   </metadata>
   <files>
-	<file src="bin\email4dev.dll" target="lib/net40" />	
-	<file src="bin\email4dev.HttpHandler.dll" target="lib/net40" />	
+	<file src="bin\email4dev.dll" target="lib/net40" />
+	<file src="bin\email4dev.HttpHandler.dll" target="lib/net40" />
+	<file src="email4dev.HttpHandler\Web.Config.Transform" target="content" />
   </files>  
 </package>

@@ -8,14 +8,14 @@ namespace email4dev.HttpHandler
     internal class ProcessRequestAsync : IAsyncResult
     {
         private bool _completed;
-        private AsyncCallback _callback;
-        private HttpContext _context;
-        private Object _state;
+        private readonly AsyncCallback _callback;
+        private readonly HttpContext _context;
+        private readonly Object _state;
         bool IAsyncResult.IsCompleted { get { return _completed; } }
         WaitHandle IAsyncResult.AsyncWaitHandle { get { return null; } }
         Object IAsyncResult.AsyncState { get { return _state; } }
         bool IAsyncResult.CompletedSynchronously { get { return false; } }
-        private string _emailDirectory;
+        private readonly string _emailDirectory;
         private readonly RequestHandler _requestHandler;
 
         public ProcessRequestAsync()
@@ -28,7 +28,8 @@ namespace email4dev.HttpHandler
             }
             _requestHandler = new RequestHandler(_emailDirectory);
         }
-        public ProcessRequestAsync(AsyncCallback callback, HttpContext context, Object state)
+
+        public ProcessRequestAsync(AsyncCallback callback, HttpContext context, Object state) : this()
         {
             _callback = callback;
             _context = context;
