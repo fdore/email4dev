@@ -6,7 +6,7 @@
     <title>email4dev Http Handler</title>
     <authors>Fabrice Dore</authors>            
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Http Handler to serve eml files as html</description>   
+    <description>Http Handler to serve eml files as html. Issues, please post them here https://github.com/fdore/email4dev/issues</description>   
     <language>en-GB</language>
     <tags>email http handle</tags>  
   </metadata>
