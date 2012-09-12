@@ -52,11 +52,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web.config.transform" />
+    <None Include="Web.config.transform">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config.Debug.config">
       <DependentUpon>Web.config.transform</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>

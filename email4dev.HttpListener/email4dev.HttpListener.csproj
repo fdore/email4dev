@@ -50,6 +50,11 @@
     <Compile Include="Web\WebResponseInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config.transform">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\email4dev\email4dev.csproj">
       <Project>{26DF942F-AF03-4265-88B1-D418C93104FA}</Project>
       <Name>email4dev</Name>

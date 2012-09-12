@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<configuration>
+﻿<configuration>
   <configSections>
     <sectionGroup name="backupMailSettings">
       <section name="smtp" type="System.Net.Configuration.SmtpSection" />
@@ -13,4 +12,4 @@
       <specifiedPickupDirectory pickupDirectoryLocation="C:\temp" />
     </smtp>
   </backupMailSettings>
-</configuration>
+</configuration> 

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>email4dev.HttpListener</id>
+    <version>0.1.0</version>
+    <title>email4dev Http Listener</title>
+    <authors>Fabrice Dore</authors>            
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Http Listener to serve eml files as html</description>   
+    <language>en-GB</language>
+    <tags>email http listener</tags>
+  </metadata>
+  <files>
+	<file src="bin\email4dev.dll" target="lib/net40" />
+	<file src="bin\email4dev.HttpListener.dll" target="lib/net40" />
+	<file src="email4dev.HttpListener\App.config.transform" target="content" />
+  </files>  
+</package>
