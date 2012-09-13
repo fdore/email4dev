@@ -2,13 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>email4dev.HttpListener</id>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <title>email4dev Http Listener</title>
-    <authors>Fabrice Dore</authors>            
+    <authors>Fabrice Dore</authors>
+	<licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/fdore/email4dev</projectUrl>	
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Http Listener to serve eml files as html. Issues, please post them here https://github.com/fdore/email4dev/issues</description>   
+    <description>Http Listener to serve eml files as html. Issues, please post them here https://github.com/fdore/email4dev/issues</description>
+	<summary>A Http Listener that make emails stored on drive searchable and accessible via http.</summary>
     <language>en-GB</language>
-    <tags>email http listener</tags>
+    <tags>email http listener smtp</tags>
   </metadata>
   <files>
 	<file src="bin\email4dev.dll" target="lib/net40" />

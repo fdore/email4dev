@@ -43,3 +43,4 @@ _ReSharper*/
 *.ncrunchsolution
 *.ncrunchproject
 *.testsettings
+psake
