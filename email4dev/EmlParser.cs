@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using email4dev.Extensions;
 
 namespace email4dev
 {

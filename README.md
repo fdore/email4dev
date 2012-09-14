@@ -16,13 +16,13 @@ Configure Smtp to drop emails on drive
 First of all, you will need to configure your smtp client to drop emails on drive.
 To do so, put the following section into your App.config or Web.config
 
-<system.net>
-	<mailSettings>
-		<smtp deliveryMethod="SpecifiedPickupDirectory">
-			<specifiedPickupDirectory pickupDirectoryLocation="c:\temp\"/>
-		</smtp>
-	</mailSettings>
-</system.net>
+	<system.net>
+		<mailSettings>
+			<smtp deliveryMethod="SpecifiedPickupDirectory">
+				<specifiedPickupDirectory pickupDirectoryLocation="c:\temp\"/>
+			</smtp>
+		</mailSettings>
+	</system.net>
 
 Now, everytime you call the Send method on your SmtpClient, the message will be dropped on drive.
 
