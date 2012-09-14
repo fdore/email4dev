@@ -46,7 +46,14 @@ email4dev allows you to search emails by subject, body, recipient and by dates.<
 <p>First of all, you will need to configure your smtp client to drop emails on drive.
 To do so, put the following section into your App.config or Web.config</p>
 
-<p></p>
+<pre><code>&lt;system.net&gt;
+    &lt;mailSettings&gt;
+        &lt;smtp deliveryMethod="SpecifiedPickupDirectory"&gt;
+            &lt;specifiedPickupDirectory pickupDirectoryLocation="c:\temp\"/&gt;
+        &lt;/smtp&gt;
+    &lt;/mailSettings&gt;
+&lt;/system.net&gt;
+</code></pre>
 
 <p>Now, everytime you call the Send method on your SmtpClient, the message will be dropped on drive.</p>
 
