@@ -34,14 +34,15 @@
         <h1>email4dev</h1>
 
 <p>email4dev is a set of Http Handler and Http Listener to expose eml files as html.
-This is particularly usefull when running Test Automation around emails. No need to login to your email inbox to retrieve and parse your emails anymore. Simply access them via a direct Http call.</p>
+This is particularly useful when running automated tests around emails. No need to login to your email inbox to retrieve and parse your emails anymore. Simply access them via a direct http call.</p>
 
 <p>You can configure the built-in .Net SmtpClient to drop emails into a location on disk.
-email4dev enables you to search and retrieve emails via http.
-Simply enter http://:8887?Subject=my email subject, and the html body of the email will be returned.
+email4dev enables you to search and retrieve them via http.</p>
+
+<p>Simply enter http://:8887?Subject=my email subject, and the html body of the email will be returned.
 email4dev allows you to search emails by subject, body, recipient and by dates.</p>
 
-<h2>Configure Smtp to drop emails on drive</h2>
+<h2>Configure your SMTP client to drop emails on drive</h2>
 
 <p>First of all, you will need to configure your smtp client to drop emails on drive.
 To do so, put the following section into your App.config or Web.config</p>
@@ -59,7 +60,7 @@ To do so, put the following section into your App.config or Web.config</p>
 
 <h2>Install email4dev</h2>
 
-<p>email4dev comes as a HttpHandler and HttpListener depending on the type of the hosting application.</p>
+<p>email4dev comes as a HttpHandler and HttpListener depending on the type of application you are working on.</p>
 
 <h3>Http Listener</h3>
 
@@ -84,10 +85,10 @@ To do so, put the following section into your App.config or Web.config</p>
   &lt;/configuration&gt;
 </code></pre>
 
-<p>Configure the pickupDirectoryLocation parameter to point to the folder where emails are now dropped.
-You can also change the EmailHttpListenerPort to whatever port to want the handler to listen to. </p>
+<p>Configure the pickupDirectoryLocation parameter to point to the folder where emails are stored.
+The port the handler is listening to is configurable via the EmailHttpListenerPort property.</p>
 
-<p><em>Note that if the handler is running in a Windows Service, the user must have enough privilege to open the socket.</em></p>
+<p><em>Note that if the handler is running inside a Windows Service, the user must have enough privilege to open the socket.</em></p>
 
 <h3>Http Handler</h3>
 
@@ -112,12 +113,12 @@ You can also change the EmailHttpListenerPort to whatever port to want the handl
   &lt;/configuration&gt;
 </code></pre>
 
-<p>Configure the pickupDirectoryLocation parameter to point to the folder where emails are now dropped.</p>
+<p>Configure the pickupDirectoryLocation parameter to point to the folder where emails are stored.</p>
 
-<h2>What if I want to be able to both be able to send emails, and drop a copy on drive?</h2>
+<h2>How can I both send emails, and keep a copy on drive?</h2>
 
-<p>If you configure your Smtp Client to drop emails on drive, then, the emails wont be sent anymore. 
-In the case you still want your email to be sent, and have a copy of it on drive, email4dev provides a SmtpClient which reads its configuration from the backupMailSettings.</p>
+<p>If you configure your Smtp Client to drop emails on drive, then the emails wont be sent anymore. 
+In case you still want your email to be sent, and keep a copy on drive, email4dev provides a SmtpClient which reads its configuration from the backupMailSettings.</p>
 
 <p>You can now use the StmpClient as usual, and use the backup smtp client to save a copy of your emails on drive.</p>
 
