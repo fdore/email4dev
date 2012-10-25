@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>email4dev</title>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34752130-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="hero-unit" style="background-color: gray">
+                <h1>email4dev</h1>
+                <h4>email4dev is a set of Http Handler and Http Listener to expose eml files as html.</h4> 
+            </header>
+    </div>
+    <div class="container">
+        <p>
+            This is particularly useful when running automated tests around emails. No need
+            to login to your email inbox to retrieve and parse your emails anymore.
+        </p>
+        <p>
+            Simply access them via a direct http call. You can configure the built-in .Net SmtpClient
+            to drop emails into a location on disk. email4dev enables you to search and retrieve
+            them via http.
+        </p>
+        <p>
+            <b>Simply enter http://localhost:8887?Subject="my email subject", and the html body
+                of the email will be returned. </b>
+            <p>
+                email4dev allows you to search emails by subject, body, recipient and by dates.</p>
+        </p>
+        <p>
+            <h5>
+                Available filters</h5>
+            <ul>
+                <li>Subject: http://localhost:8887?Subject="email subject" </li>
+                <li>Recipient: http://localhost:8887?Recipient="email address" </li>
+                <li>Body content: http://localhost:8887?Body="text to search for" </li>
+                <li>Time sent: http://localhost:8887?Body="text to search for"&TimeSent="time to search
+                    from" </li>
+            </ul>
+            email4dev always returns the latest email matching the filter.
+        </p>
+        <a href="https://github.com/fdore/email4dev/wiki">More information...</a>
+    </div>
+</body>
+</html>

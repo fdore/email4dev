@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace email4dev.HttpHandler.Example.Controllers
 {
-    public class IndexController : Controller
+    public class HomeController : Controller
     {
         //
         // GET: /Index/
